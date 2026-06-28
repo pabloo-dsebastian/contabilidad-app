@@ -101,7 +101,7 @@ export default function Home() {
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-2xl font-bold text-white">Mi Contabilidad</h1>
+          <h1 className="text-2xl font-bold text-white">Contto</h1>
           <p className="text-gray-400 text-xs mt-0.5">{usuario}</p>
         </div>
         <button onClick={cerrarSesion} className="text-xs text-gray-500 hover:text-gray-300">Salir</button>
