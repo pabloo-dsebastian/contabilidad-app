@@ -30,7 +30,10 @@ export default function Login() {
   return (
     <main className="min-h-screen bg-gray-900 flex items-center justify-center p-6">
       <div className="bg-gray-800 rounded-2xl shadow-xl p-6 w-full max-w-sm">
-        <h1 className="text-3xl font-bold text-center mb-1 text-white">Contto</h1>
+        <div className="flex items-center justify-center gap-2 mb-1">
+          <img src="/logo.png" alt="Contto" className="w-8 h-8 object-contain" />
+          <h1 className="text-3xl font-bold text-white">Contto</h1>
+        </div>
         <p className="text-center text-gray-400 text-sm mb-6">
           {modo === 'login' ? 'Inicia sesión en tu cuenta' : 'Crea tu cuenta gratis'}
         </p>

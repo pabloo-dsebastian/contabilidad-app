@@ -56,7 +56,7 @@ export default function Landing() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-[#050505]/85 backdrop-blur-2xl border-b border-white/[0.06]' : ''}`}>
         <div className="flex justify-between items-center px-8 py-5 max-w-7xl mx-auto">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-xl flex items-center justify-center text-sm font-black shadow-lg shadow-green-500/40">C</div>
+            <img src="/logo.png" alt="Contto" className="w-8 h-8 object-contain" />
             <span className="text-xl font-bold tracking-tight">Contto</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-gray-500">
