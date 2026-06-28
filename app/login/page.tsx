@@ -22,7 +22,7 @@ export default function Login() {
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password })
       if (error) setMensaje('Email o contraseña incorrectos')
-      else window.location.href = '/'
+      else window.location.href = '/dashboard'
     }
     setCargando(false)
   }
