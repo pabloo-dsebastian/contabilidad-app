@@ -329,7 +329,7 @@ export default function Dashboard() {
                         <YAxis tick={{fill:'#2d2d2d',fontSize:10}} tickLine={false} axisLine={false}/>
                         <Tooltip cursor={{fill:'rgba(255,255,255,0.015)'}}
                           contentStyle={{backgroundColor:'#080808',border:'1px solid #111',borderRadius:'12px',color:'#fff',fontSize:'12px',padding:'10px 14px'}}
-                          formatter={(v:number,n:string)=>[`${formatEuro(v)}€`,n==='v'?'Ingresos':'Gastos']}/>
+                          formatter={(v:any,n:any)=>[`${formatEuro(Number(v))}€`,n==='v'?'Ingresos':'Gastos']}/>
                         <Bar dataKey="v" fill="#22c55e" radius={[3,3,0,0]} maxBarSize={24}/>
                         <Bar dataKey="g" fill="#ef444460" radius={[3,3,0,0]} maxBarSize={24}/>
                       </BarChart>
@@ -537,7 +537,7 @@ export default function Dashboard() {
                       <YAxis tick={{fill:'#2d2d2d',fontSize:10}} tickLine={false} axisLine={false}/>
                       <Tooltip cursor={{stroke:'#22c55e30',strokeWidth:1}}
                         contentStyle={{backgroundColor:'#080808',border:'1px solid #111',borderRadius:'12px',color:'#fff',fontSize:'12px',padding:'10px 14px'}}
-                        formatter={(v:number)=>[`${formatEuro(v)}€`,'Ingresos']}/>
+                        formatter={(v:any)=>[`${formatEuro(Number(v))}€`,'Ingresos']}/>
                       <Area type="monotone" dataKey="v" stroke="#22c55e" strokeWidth={1.5} fill="url(#ag)"/>
                     </AreaChart>
                   </ResponsiveContainer>
